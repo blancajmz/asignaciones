@@ -1,0 +1,7 @@
+biji_user:
+    resource: "@BIJIUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

@@ -1,0 +1,53 @@
+biji_task_index:
+    path:     /index
+    defaults: { _controller: BIJIUserBundle:Task:index }
+
+biji_task_add:
+    path:     /add
+    defaults: { _controller: BIJIUserBundle:Task:add }
+
+biji_task_create:
+    path:     /create
+    defaults: { _controller: BIJIUserBundle:Task:create }
+    methods:  POST
+
+biji_task_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BIJIUserBundle:Task:edit }
+
+biji_task_update:
+    path:     /update/{id}
+    defaults: { _controller: BIJIUserBundle:Task:update }
+    methods:  [POST, PUT]
+
+biji_task_view:
+    path:     /view/{id}
+    defaults: { _controller: BIJIUserBundle:Task:view }
+
+biji_task_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BIJIUserBundle:Task:delete }
+    methods:  [POST, DELETE]
+
+biji_task_redirect_add:
+    path: /create
+    defaults:
+        _controller: BIJIUserBundle:Task:add
+        path: /add
+        permanent: true
+
+biji_task_custom:
+    path:     /custom
+    defaults: { _controller: BIJIUserBundle:Task:custom }
+
+biji_task_process:
+    path:     /process/{id}
+    defaults: { _controller: BIJIUserBundle:Task:process }
+    methods:  [POST, PUT]
+
+biji_task_redirect_edit:
+    path: /update/{id}
+    defaults:
+        _controller: BIJIUserBundle:Task:edit
+        path: /edit/{id}
+        permanent: true

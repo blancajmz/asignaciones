@@ -1,0 +1,4 @@
+services:
+#    biji_user.example:
+#        class: BIJI\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
